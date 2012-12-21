@@ -1,0 +1,49 @@
+﻿Build started 21.12.2012 10:52:18.
+     1>Project "c:\Users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\vectorsSumm\vectorsSumm.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\vectorsSumm.unsuccessfulbuild".
+       AddCudaCompileDeps:
+         F:\VisualStudio\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" /I. /FIcuda_runtime.h /c "c:\Users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\vectorsSumm\kernel.cu" 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\freem_000\AppData\Local\Temp\tmp63dbb19578564e7bab27282c1f8d8b0f.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "F:\VisualStudio\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include"  -G   --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o "Debug\kernel.cu.obj" "c:\Users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\vectorsSumm\kernel.cu"
+         
+         c:\Users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\vectorsSumm>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "F:\VisualStudio\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\include"  -G   --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o "Debug\kernel.cu.obj" "c:\Users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\vectorsSumm\kernel.cu" 
+         kernel.cu
+         tmpxft_000007b0_00000000-2_kernel.cudafe1.gpu
+         tmpxft_000007b0_00000000-7_kernel.cudafe2.gpu
+         kernel.cu
+         tmpxft_000007b0_00000000-2_kernel.cudafe1.cpp
+         tmpxft_000007b0_00000000-12_kernel.ii
+         Deleting file "tmpxft_000007b0_00000000-8_kernel.cpp3.o".
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\vectorsSumm.exe.embed.manifest.res" Debug\vectorsSumm_manifest.rc 
+       Link:
+         F:\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\Debug\vectorsSumm.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\vectorsSumm.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\Debug\vectorsSumm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\Debug\vectorsSumm.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         Debug\vectorsSumm.exe.embed.manifest.res
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\vectorsSumm.exe.embed.manifest" /manifest Debug\vectorsSumm.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\vectorsSumm.exe.embed.manifest.res" Debug\vectorsSumm_manifest.rc 
+       LinkEmbedManifest:
+         F:\VisualStudio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\Debug\vectorsSumm.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\vectorsSumm.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\Debug\vectorsSumm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\Debug\vectorsSumm.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         Debug\vectorsSumm.exe.embed.manifest.res
+         vectorsSumm.vcxproj -> c:\users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\Debug\vectorsSumm.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "c:\users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "c:\users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart*.dll" "c:\users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart32_50_35.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.0\bin\cudart64_50_35.dll
+         Скопировано файлов:         2.
+       FinalizeBuildStatus:
+         Deleting file "Debug\vectorsSumm.unsuccessfulbuild".
+         Touching "Debug\vectorsSumm.lastbuildstate".
+     1>Done Building Project "c:\Users\freem_000\documents\visual studio 2010\Projects\vectorsSumm\vectorsSumm\vectorsSumm.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.08
